@@ -58,20 +58,20 @@ should provide details.
 | Access the camera                              | `UIImagePickerController` using the `.camera` `sourceType`                            | [`image_picker`][]           |
 | Use advanced camera features                   | `AVFoundation`                                                                        | [`camera`][]                 |
 | Offer In-app purchases                         | `StoreKit`                                                                            | [`in_app_purchase`][]<sup>[1]</sup>    |
-| Process payments                               | `PassKit`                                                                             | [`pay`][][<sup>2</sup>][2]                |
-| Send push notifications                        | `UserNotifications`                                                                   | [`firebase_messaging`][][<sup>3</sup>][3] |
+| Process payments                               | `PassKit`                                                                             | [`pay`][]<sup>[2]</sup>                |
+| Send push notifications                        | `UserNotifications`                                                                   | [`firebase_messaging`][]<sup>[3]</sup> |
 | Access GPS coordinates                         | `CoreLocation`                                                                        | [`geolocator`][]             |
-| Access sensor data[<sup>4</sup>][4]                         | `CoreMotion`                                                                          | [`sensors_plus`][]           |
+| Access sensor data<sup>[4]</sup>                         | `CoreMotion`                                                                          | [`sensors_plus`][]           |
 | Embed maps                                     | `MapKit`                                                                              | [`google_maps_flutter`][]    |
 | Make network requests                          | `URLSession`                                                                          | [`http`][]                   |
 | Store key-values                               | `@AppStorage` property wrapper and `NSUserDefaults`                                   | [`shared_preferences`][]     |
 | Persist to a database                          | `CoreData` or SQLite                                                                  | [`sqflite`][]                |
 | Access health data                             | `HealthKit`                                                                           | [`health`][]                 |
-| Use machine learning                           | `CoreML`                                                                              | [`google_ml_kit`][][<sup>5</sup>][5]      |
-| Recognize text                                 | `VisionKit`                                                                           | [`google_ml_kit`][][<sup>5</sup>][6]      |
+| Use machine learning                           | `CoreML`                                                                              | [`google_ml_kit`][]<sup>[5]</sup>      |
+| Recognize text                                 | `VisionKit`                                                                           | [`google_ml_kit`][]<sup>[5]</sup>      |
 | Recognize speech                               | `Speech`                                                                              | [`speech_to_text`][]         |
 | Use augmented reality                          | `ARKit`                                                                               | [`ar_flutter_plugin`][]      |
-| Access weather data                            | `WeatherKit`                                                                          | [`weather`][][<sup>6</sup>][6]            |
+| Access weather data                            | `WeatherKit`                                                                          | [`weather`][]<sup>[6]</sup>            |
 | Access and manage contacts                     | `Contacts`                                                                            | [`contacts_service`][]       |
 | Expose quick actions on the home screen        | `UIApplicationShortcutItem`                                                           | [`quick_actions`][]          |
 | Index items in Spotlight search                | `CoreSpotlight`                                                                       | [`flutter_core_spotlight`][] |
@@ -79,12 +79,18 @@ should provide details.
 
 {:.table .table-striped .nowrap}
 
-[1]: Supports both Google Play Store on Android and Apple App Store on iOS.
-[2]: Adds Google Pay payments on Android and Apple Pay payments on iOS.
-[3]: Uses Firebase Cloud Messaging and integrates with APNs.
-[4]: Includes sensors like accelerometer, gyroscope, etc.
-[5]: Uses Google's ML Kit and supports various features like text recognition, face detection, image labeling, landmark recognition, and barcode scanning. You can also create a custom model with Firebase. To learn more, see [Use a custom TensorFlow Lite model with Flutter][].
-[6]: Uses the [OpenWeatherMap API][]. Other packages exist that can pull from different weather APIs.
+[1]: Supports both Google Play Store on Android and Apple App Store on iOS.<br>
+[2]: Adds Google Pay payments on Android and Apple Pay payments on iOS.<br>
+[3]: Uses Firebase Cloud Messaging and integrates with APNs.<br>
+[4]: Includes sensors like accelerometer, gyroscope, etc.<br>
+[5]: Uses Google's ML Kit and supports various features
+     like text recognition, face detection, image labeling,
+     landmark recognition, and barcode scanning.
+     You can also create a custom model with Firebase.
+     To learn more, see
+     [Use a custom TensorFlow Lite model with Flutter][].<br>
+[6]: Uses the [OpenWeatherMap API][]. Other packages exist that
+     can pull from different weather APIs.<br>
 
 [Flutter for SwiftUI developers]: /get-started/flutter-for/swiftui-devs
 [Using packages]: /packages-and-plugins/using-packages
