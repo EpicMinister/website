@@ -1,6 +1,8 @@
 ---
-title: Leveraging Apple's System APIs and Frameworks
-description: Learn about Flutter plugins that offer equivalent functionalities to Apple's frameworks
+title: Leverage Apple's System APIs and Frameworks
+description: >
+  Learn about Flutter plugins that offer equivalent
+  functionalities to Apple's frameworks
 ---
 
 When you come from iOS development, you might need to find
@@ -13,7 +15,8 @@ see [Flutter for SwiftUI developers][].
 
 ## Introducing Flutter plugins
 
-Dart calls libraries that contain platform-specific code _plugins_.
+Dart calls libraries that contain platform-specific code _plugins_,
+short for "plugin package".
 When developing an app with Flutter, you use _plugins_ to interact
 with system libraries.
 
@@ -25,10 +28,12 @@ platforms that the plugin supports.
 To learn more about plugins, see [Using packages][].
 Though this page links to some popular plugins,
 you can find thousands more, along with examples,
-on [pub.dev][]. The following table does not endorse any particular plugin.
-If you can't find a package that meets your need,
-you can create your own or use platform channels directly in your project.
-To learn more, see [Writing platform-specific code][].
+on [pub.dev][].
+The following table does not endorse any particular plugin.
+If you can't find a package that meets your needs,
+you can create your own or
+use platform channels directly in your project.
+To learn more, check out [Writing platform-specific code][].
 
 ## Adding a plugin to your project
 
@@ -52,21 +57,21 @@ should provide details.
 | Access the photo library                       | `PhotoKit`using the `Photos` and `PhotosUI ` frameworks and `UIImagePickerController` | [`image_picker`][]           |
 | Access the camera                              | `UIImagePickerController` using the `.camera` `sourceType`                            | [`image_picker`][]           |
 | Use advanced camera features                   | `AVFoundation`                                                                        | [`camera`][]                 |
-| Offer In-app purchases                         | `StoreKit`                                                                            | [`in_app_purchase`][][^1]    |
-| Process payments                               | `PassKit`                                                                             | [`pay`][][^2]                |
-| Send push notifications                        | `UserNotifications`                                                                   | [`firebase_messaging`][][^3] |
+| Offer In-app purchases                         | `StoreKit`                                                                            | [`in_app_purchase`][][^1^]    |
+| Process payments                               | `PassKit`                                                                             | [`pay`][][^2^]                |
+| Send push notifications                        | `UserNotifications`                                                                   | [`firebase_messaging`][][^3^] |
 | Access GPS coordinates                         | `CoreLocation`                                                                        | [`geolocator`][]             |
-| Access sensor data[^4]                         | `CoreMotion`                                                                          | [`sensors_plus`][]           |
+| Access sensor data[^4^]                         | `CoreMotion`                                                                          | [`sensors_plus`][]           |
 | Embed maps                                     | `MapKit`                                                                              | [`google_maps_flutter`][]    |
 | Make network requests                          | `URLSession`                                                                          | [`http`][]                   |
 | Store key-values                               | `@AppStorage` property wrapper and `NSUserDefaults`                                   | [`shared_preferences`][]     |
 | Persist to a database                          | `CoreData` or SQLite                                                                  | [`sqflite`][]                |
 | Access health data                             | `HealthKit`                                                                           | [`health`][]                 |
-| Use machine learning                           | `CoreML`                                                                              | [`google_ml_kit`][][^5]      |
-| Recognize text                                 | `VisionKit`                                                                           | [`google_ml_kit`][][^5]      |
+| Use machine learning                           | `CoreML`                                                                              | [`google_ml_kit`][][^5^]      |
+| Recognize text                                 | `VisionKit`                                                                           | [`google_ml_kit`][][^5^]      |
 | Recognize speech                               | `Speech`                                                                              | [`speech_to_text`][]         |
 | Use augmented reality                          | `ARKit`                                                                               | [`ar_flutter_plugin`][]      |
-| Access weather data                            | `WeatherKit`                                                                          | [`weather`][][^6]            |
+| Access weather data                            | `WeatherKit`                                                                          | [`weather`][][^6^]            |
 | Access and manage contacts                     | `Contacts`                                                                            | [`contacts_service`][]       |
 | Expose quick actions on the home screen        | `UIApplicationShortcutItem`                                                           | [`quick_actions`][]          |
 | Index items in Spotlight search                | `CoreSpotlight`                                                                       | [`flutter_core_spotlight`][] |
@@ -74,12 +79,12 @@ should provide details.
 
 {:.table .table-striped .nowrap}
 
-[^1]: Supports both Google Play Store on Android and Apple App Store on iOS.
-[^2]: Adds Google Pay payments on Android and Apple Pay payments on iOS.
-[^3]: Uses Firebase Cloud Messaging and integrates with APNs.
-[^4]: Includes sensors like accelerometer, gyroscope, etc.
-[^5]: Uses Google's ML Kit and supports various features like text recognition, face detection, image labeling, landmark recognition, and barcode scanning. You can also create a custom model with Firebase. To learn more, see [Use a custom TensorFlow Lite model with Flutter][].
-[^6]: Uses the [OpenWeatherMap API][]. Other packages exist that can pull from different weather APIs.
+[^1^]: Supports both Google Play Store on Android and Apple App Store on iOS.
+[^2^]: Adds Google Pay payments on Android and Apple Pay payments on iOS.
+[^3^]: Uses Firebase Cloud Messaging and integrates with APNs.
+[^4^]: Includes sensors like accelerometer, gyroscope, etc.
+[^5^]: Uses Google's ML Kit and supports various features like text recognition, face detection, image labeling, landmark recognition, and barcode scanning. You can also create a custom model with Firebase. To learn more, see [Use a custom TensorFlow Lite model with Flutter][].
+[^6^]: Uses the [OpenWeatherMap API][]. Other packages exist that can pull from different weather APIs.
 
 [Flutter for SwiftUI developers]: /get-started/flutter-for/swiftui-devs
 [Using packages]: /packages-and-plugins/using-packages
