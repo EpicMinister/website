@@ -57,7 +57,7 @@ should provide details.
 | Access the photo library                       | `PhotoKit`using the `Photos` and `PhotosUI ` frameworks and `UIImagePickerController` | [`image_picker`][]           |
 | Access the camera                              | `UIImagePickerController` using the `.camera` `sourceType`                            | [`image_picker`][]           |
 | Use advanced camera features                   | `AVFoundation`                                                                        | [`camera`][]                 |
-| Offer In-app purchases                         | `StoreKit`                                                                            | [`in_app_purchase`][][<sup>1</sup>][1]    |
+| Offer In-app purchases                         | `StoreKit`                                                                            | [`in_app_purchase`][]<sup>[1]</sup>    |
 | Process payments                               | `PassKit`                                                                             | [`pay`][][<sup>2</sup>][2]                |
 | Send push notifications                        | `UserNotifications`                                                                   | [`firebase_messaging`][][<sup>3</sup>][3] |
 | Access GPS coordinates                         | `CoreLocation`                                                                        | [`geolocator`][]             |
